@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //no argument,no parameter
+        function msg(){
+            console.log("hiii hello")
+        }
+        msg()
+        //with parameter
+        function check(num){
+            return(num>0)
+        }
+        console.log(check(-9))
+        //with parameter and arguments
+        function add(a,b){
+            return(a+b)
+        }
+        console.log(add(5,6))
+        //default parameter
+        function greet(name='gayu'){
+            console.log('hi',name)
+        }
+        greet()
+        greet('nila')
+        //recursion-function call itself
+        function fact(n){
+            if(n==1)
+              return 1
+            else
+              return(n*fact(n-1))
+            }
+        console.log(fact(1))    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let values=[12,34,56,12]
+    let dis=values.reduce((total,elements)=>total+elements)
+    console.log(dis)
+    let arr2d=[['a','b','c'],
+               ['c','d','e'],
+               ['e','f','g'],
+            ];
+    let convert=arr2d.flat().reduce(
+        (accumulator,curr)=>{
+            if(accumulator[curr])
+                accumulator[curr]++
+            else
+                accumulator[curr]=1
+            return accumulator
+     } ,{})       
+     console.log(convert)    
+   </script>
+    
+</body>
+</html>

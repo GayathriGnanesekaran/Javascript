@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function tatkal(){
+        return new Promise((resolve,reject)=>{
+        let book=true
+        if(book)
+           resolve(650)
+        else
+           reject()
+       })
+    }
+       tatkal().then((amt)=>console.log('successfully registered'))
+       tatkal().catch(()=>console.log('try again'))
+ </script>
+</body>
+</html>

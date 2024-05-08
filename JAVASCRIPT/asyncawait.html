@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function fn(){
+            return 'hiii'
+        }
+        console.log(fn())
+        let reacha=new Promise((resolve,reject)=>{
+            let reached=true
+            if(reached)
+             setTimeout(resolve,2000,'nila is reached')
+            else
+              reject('nila is not reached..')
+        })
+        async function example(){
+            try{
+                let res=await reacha
+                console.log(res)
+                console.log('bye....')
+            }
+            catch(error){
+                console.log(error)
+            }
+        }
+        console.log(example())
+    </script>
+    
+    
+</body>
+</html>

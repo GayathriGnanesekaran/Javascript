@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            class user{
+                static noofusers=0;//static variable
+                constructor(name,age){
+                    this.name=name;
+                    this.age=age;//instance variable
+                    user.noofusers++;//static variable is accessed using class name
+                }
+                login(){
+                    console.log("hii",this.name);
+                    console.log("you are logged in")
+                }
+            }
+            //object creation
+            let user1=new user('gayu',21)
+            let user2=new user('nila',24)
+            user1.login()
+            console.log(user.noofusers)
+        
+    
+        </script>
+
+    </body>
+</html>

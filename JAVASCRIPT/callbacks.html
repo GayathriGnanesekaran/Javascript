@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(val1,val2,callback){
+            let out=val1+val2
+            callback(out)
+        }
+        function display(out){
+            document.write("<h2> sum is"+out+"</h2>")
+        }
+        console.log(add(34,5,display))
+        function input(callback){
+            const data=prompt('enter your name')
+            callback(data)
+        }
+        function disp(data){
+            alert(`name is :${data}`);
+        }
+        console.log(input(disp))
+        
+    </script>
+    
+</body>
+</html>

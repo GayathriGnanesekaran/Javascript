@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="inputs">
+            <input type="number" placeholder="enter the month" id="inp">
+       </div>
+       <div>
+        <button type="submit" onclick="calculate()">CALCULATE</button>
+       </div>
+       <div id="result">
+
+       </div>
+    </div>
+    <script>
+        function calculate(){
+    let month=document.getElementById('inp').value;
+    let rate
+    /*>3 month-5.8
+    3-6 month-6.5
+    7-9 month-6.8
+    >=10 month 7
+    */
+   if(month<3){
+      console.log(rate=5.8)
+   }
+   else if(month>=3 && month<=6){
+    console.log(rate=6.5)
+   }
+   else if(month>=6 && month<=9)
+      console.log(rate=6.8)
+    else{
+        console.log(rate=7)
+    }
+    let fd=document.querySelector("#result").innerHTML=rate
+}
+    </script>
+    
+</body>
+</html>

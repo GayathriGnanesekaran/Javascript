@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       class temperature{
+        constructor(temp){
+            this._temp=temp;
+        }
+        get temp(){
+            return this._temp
+        }
+        set temp(temp){
+            if(temp>100)
+              temp=100
+            this._temp=temp
+        }
+       }
+       let temp1=new temperature(56)
+       temp1.temp=126
+       console.log(temp1.temp)
+    </script>
+    
+</body>
+</html>

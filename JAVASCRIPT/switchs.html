@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="inp">
+        <select id="inputs">
+            <option value="chennai">chennai</option>
+            <option value="ooty">ooty</option>
+            <option value="bangalore">bangalore</option>
+            <option value="covai">covai</option>
+        </select>
+    </div>
+    <div id="butt">
+        <button type="button" onclick="change()">show</button>
+    </div>
+    <div id="ress">
+
+    </div>
+    <script>
+    function change(){
+        const inpvalue=document.getElementById('inputs')
+        const city=inputs.options[inputs.selectedIndex].value
+        console.log(city)
+        let pop=0,lang=""
+        switch(city){
+            case 'chennai':
+                pop=234555;
+                lang="tamil";
+                break;
+            case 'ooty':
+                pop=456677;
+                lang="english";
+                break;
+
+            case 'bangalore':
+                pop=358385;
+                lang="malayalam"; 
+                break;
+            case 'covai':
+                pop=348876;
+                lang="kanadam";  
+                break;         
+        }
+        let text=`the population is ${pop} and language used is ${lang}`
+        console.log(text)
+        let last=document.getElementById('ress').innerHTML=text;
+    }
+</script>
+</body>
+</html>

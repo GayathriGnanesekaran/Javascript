@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //we can assign the function in the object-function expression
+        let findeven=function(num){
+            if(num%2==0){
+                return('true')
+            }
+            else{
+                return('false')
+            }
+        }
+        console.log(findeven(3))
+        //add the element in the array
+       let arr=[1,2,3,4,5,6]
+       let sum=0
+       let add=function(){
+       for(i of arr){
+         sum+=i
+       }
+       return(sum)
+    }
+    console.log(add(arr))
+    //find the area using function expression and with parameter and arguments
+    let area=function(l,b,h){
+        return(l*b*h)
+    }
+    console.log(area(3,4,5))
+    </script>
+    
+</body>
+</html>

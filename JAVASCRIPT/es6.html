@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function user(name,age){
+            this.name=name;
+            this.age=age;
+        }
+        user.prototype.login=function(){
+            console.log("hi",this.name)
+            console.log("you are loggedin")
+        }
+        let user1=new user('nila',21)
+        user1.login()
+
+    </script>
+    
+</body>
+</html>

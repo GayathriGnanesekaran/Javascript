@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a=100//returning function
+        function outer(name){
+            let outname="gayu"
+            function inner(){
+                let inname="nila"
+                console.log("outer is",outname)
+                console.log("inner is",inname)
+                console.log("a is",a)
+                console.log("name is",name)
+            }
+            return inner()
+        }
+        call1=outer('xxxxx')
+        call1
+        call2=outer('yyyyyy')
+        call2//the paramter is present it is called clousure
+        
+    </script>
+    
+</body>
+</html>

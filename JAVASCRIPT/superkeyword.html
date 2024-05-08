@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       class user{
+        constructor(name,age){
+            this.name=name;
+            this.age=age;
+
+        }
+        
+        login(){
+            console.log("hi",this.name)
+            console.log("you are logged in")
+        }
+
+       }
+       let user1=new user('nila',21)
+       user1.login()
+       class paiduser extends user{
+        constructor(name,age){
+            super(name,age)
+            this.storage=100;
+        }
+        message(){
+            console.log("you have to paid 300")
+        }
+       }
+       let paid=new paiduser('gayumaa',45)
+       paid.message()
+       paid.login()
+    </script>
+    
+</body>
+</html>

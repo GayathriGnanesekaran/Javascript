@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        function greetconsole(name){
+            console.log("hi"+name)
+        }
+        function greetheading(name){
+            let heads=document.querySelector('h1').innerHTML="hi"+name
+        }
+        function greet(callback){
+            callback("gayuma")
+        }
+        greet(greetheading())
+        greet(greetconsole())
+        greet(name=>console.log("hi"+"gayu")
+    )
+    </script>
+    
+</body>
+</html>

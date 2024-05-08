@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function dice(){
+        return new Promise((resolve,reject)=>{
+            let dices=Math.floor(Math.random()*2)
+            if(dices==0)
+              resolve()
+            else
+              reject()
+        })
+       }
+       dice().then(()=>console.log('i will won'))
+       dice().catch(()=>console.log('you lost'))
+    </script>
+</body>
+</html>
+

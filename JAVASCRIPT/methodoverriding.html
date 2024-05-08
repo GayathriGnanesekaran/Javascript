@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       class user{
+        constructor(name){
+            this.name=name;
+        }
+        login(){
+            console.log("you are logged in")
+
+        }
+        
+       }
+       let user1=new user('gayu',21)
+       user1.login()
+       class paiduser extends user{
+        login(){
+            console.log("you are again loggedin")
+            return this
+        }
+        message(){
+            console.log("welcome")
+            
+        }
+       }
+       let paid1=new paiduser('nila',56)
+       paid1.login()
+       //method chaining
+       paid1.login().message()
+    </script>
+    
+</body>
+</html>

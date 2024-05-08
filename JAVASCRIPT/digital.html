@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrappper">
+            <span id="hours">00</span>
+            <span>:</span>
+            <span id="minutes">00</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+            <span id="ampm">AM</span>
+        </div>
+    </div>
+    <script>
+        let AmPm=document.getElementById('ampm')
+        let dateTime=new Date()
+         let hr=padzero(dateTime.getHours())
+         let min=padzero(dateTime.getMinutes())  
+         let sec=padzero(dateTime.getSeconds())  
+         if(hr>12){
+            hr=hr-12
+            AmPm.innerHTML='PM'
+         }
+         document.getElementById('hours').innerHTML=hr
+         document.getElementById('minutes').innerHTML=min
+         document.getElementById('seconds').innerHTML=sec
+         function padzero(num){
+            return num<10?"0"+num:num
+            
+         }
+
+        
+    </script>
+    
+</body>
+</html>

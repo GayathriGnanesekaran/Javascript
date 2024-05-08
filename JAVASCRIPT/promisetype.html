@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+       let reacha=new Promise((resolve,reject)=>{
+       let reached=true
+       if(reached)
+         setTimeout(resolve,2000,'nila is reached')
+        else
+         reject('not reached')
+       })
+       let reachb=new Promise((resolve,reject)=>{
+        let reached=true
+        if(reached)
+          setTimeout(resolve,1000,'gayu is reached')
+        else
+          reject('not reached')
+       })
+       let reachc=new Promise((resolve,reject)=>{
+       let reached=true
+       if(reached)
+         setTimeout(resolve,3000,'gayuma is reached')
+        
+       else
+         reject('not reached') 
+        })
+        Promise.race([reacha,reachb,reachc]).then((message)=>console.log(message)).catch((message)=>console.log(message))
+
+     </script>
+    
+</body>
+</html>

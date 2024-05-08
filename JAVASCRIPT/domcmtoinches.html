@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="wrapper">
+    <h2>cm to inches</h2>
+    <div class="inp">
+        <input type="text" placeholder="enter in cm" id="inps">
+    </div>
+    <div> 
+        <button type="submit" onclick="fun()">change it</button>
+    </div>
+    <div id="result">
+    </div>
+   </div>
+   <script>
+    function fun(){
+        let val=document.getElementById("inps").value;
+        let calculate=val/2.54
+        let res=document.getElementById("result").innerHTML=calculate;
+    }
+   </script>
+</body>
+</html>

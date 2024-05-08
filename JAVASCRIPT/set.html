@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,2,3,4,5,5,6,1]
+        let sets=new Set(arr)
+        console.log(sets)  
+        //set is created by us
+        let maps=new Set()
+        maps.add(1)
+        maps.add(2)
+        maps.add({'a':1,'b':2})
+        maps.add(1)
+        console.log(maps)
+        let b={'a':1,'b':2}
+        maps.add(b)
+        console.log(maps)
+        console.log(maps.size)
+        console.log(maps.has(7))
+        console.log(maps.delete(9))
+        //set to array
+        let arrs=Array.from(maps)
+        console.log(arrs)
+    </script>  
+</body>
+</html>

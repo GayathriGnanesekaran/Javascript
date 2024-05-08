@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function adder(x){
+            return function(y){
+                return x+y
+            }
+            
+            }
+            let addd=adder(7)//outer pparameter is still combined with inner variable
+            console.log(addd(15))
+            console.log(addd(89))
+    </script>
+    
+</body>
+</html>

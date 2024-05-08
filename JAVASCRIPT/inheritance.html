@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       class users{
+        constructor(name,age){
+            this.name=name;
+            this.age=age;
+        }
+        login(){
+            console.log("hii",this.name)
+            console.log("you are logged in")
+        }
+       }
+       let user1=new users('gayu',21)
+       let user2=new users('nila',32)
+       class paiduser extends users{
+        message(){
+            console.log("you have to paid 300")
+        }
+       }
+       user1.login()
+       let paid1=new paiduser('gayuma',23)
+       paid1.message()
+       paid1.login()
+    </script>
+    
+</body>
+</html>

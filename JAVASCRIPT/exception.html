@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      try{
+        num=prompt('enter a number')
+        if(num==='')
+           throw 'cannot be empty'
+        if(!NaN(num))
+           throw 'enter a valid no'
+        console.log(num**28)
+       }
+       catch(error){
+        console.log(error)
+       }
+       finally{
+         console.log('bye......')
+       }
+ </script>
+</body>
+</html>
